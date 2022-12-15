@@ -13,30 +13,38 @@
 	</head>
 
 	<body id='login-body' class="bg-light">
-
-        <div class="card col-md-6 offset-md-3 text-center bg-primary mb-4">
-            <h3 class="he3-responsive text-white">Simple Online Quiz System</h3>
-        </div>
-		<div class="card col-md-4 offset-md-4 mt-4">
-                <div class="card-header-edge text-white">
-                    <strong>Login</strong>
-                </div>
-            <div class="card-body">
-                     <form id="login-frm">
-                        <div class="form-group">
-                            <label>Username</label>
-                            <input type="username" name="username" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <input type="password" name="password" class="form-control">
-                        </div> 
-                        <div class="form-group text-right">
-                            <button class="btn btn-primary btn-block" name="submit">Login</button>
-                        </div>
+        <div class = "container">
+        <div class="form-box">
+            <div class="logo"></div>
+            <h1 id="title">Login</h1>
+                <form id="login-frm">
+                    <div class="form-group" id = "nameField">
+                        <input type="username" name="username" placeholder = "Username" class="form-control">
+                    </div>
+                    
+                    <div class="form-group" id = "passwordField">
+                        <input type="password" name="password" placeholder = "password" class="form-control">                        
+                    </div> 
+                    
+            
+                    <div class="form-group text-right">
+                        <button class="btn btn-primary btn-block" name="submit">Login</button>
+                    </div>
                         
-                    </form>
+
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id = "logCheck">
+                            <label for="logCheck" class = "text">Remember me</label>
+                        </div>
+
+                        <a href="#" class = "text">Forgot passwod?</a>
+                    </div>
+                </form>
             </div>
         </div>
+        </div>
+		
 
 		</body>
 
