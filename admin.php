@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body>
+<!-- <body>
     <form id="login-frm">
         <div class="form-group">
             <h2>Login</h2>
@@ -28,6 +28,52 @@
             <button type="submit">Login</button>
         </div>
     </form>
+</body> -->
+
+<body>
+    <div class = "container">
+        <div class = "form-box">
+            <div class="logo"></div>
+            <h1 id="title">Login</h1>
+            
+            <form action="" method="post">
+                <div class = "input-group">
+                    <div class = "input-field" id="nameField">
+                        <input type="username" id = "username" placeholder="Username">
+                    </div>
+
+                    <div class = "input-field">
+                        <input type="password" id ="password" placeholder="Password">
+                    </div>
+                </div>
+                
+                <div class="checkbox-text">
+                    <div class="checkbox-content">
+                        <input type="checkbox" id="logCheck">
+
+                    </div>
+                    <p for="logcheck" class="text">Remember me</p>
+                </div>
+
+                <p>Forgot password? <a href="#">Click here</a></p>
+                
+                <div class="btn-field">
+                    <button type="button" onclick="validation()" id="loginBtn">Login</button>
+                    <button type="button" id = "cancelBtn" class="disable">Cancel</button>
+                </div>
+            
+            
+            
+            
+            </form>
+        </div>
+
+        
+    </div>
+
+
+
+    
 </body>
 <script>
     $(document).ready(function() {
