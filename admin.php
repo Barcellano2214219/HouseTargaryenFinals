@@ -13,68 +13,30 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<!-- <body>
-    <form id="login-frm">
-        <div class="form-group">
-            <h2>Login</h2>
-            <label>UserName</label>
-            <input type="text" name="username" placeholder="Username" class="form-control">
-        </div>
-        <div class="form-group">
-            <label>UserName</label>
-            <input type="password" name="password" placeholder="Password" class="form-control">
-        </div>
-        <div class="form-group">
-            <button type="submit">Login</button>
-        </div>
-    </form>
-</body> -->
-
 <body>
-    <div class = "container">
-        <div class = "form-box">
+    <form class = "container" id="login-frm">     
+       <div class="form-box">
+            <h1>Login</h1>
             <div class="logo"></div>
-            <h1 id="title">Login</h1>
-            
-            <form action="" method="post">
-                <div class = "input-group">
-                    <div class = "input-field" id="nameField">
-                        <input type="username" id = "username" placeholder="Username">
-                    </div>
-
-                    <div class = "input-field">
-                        <input type="password" id ="password" placeholder="Password">
-                    </div>
-                </div>
-                
-                <div class="checkbox-text">
-                    <div class="checkbox-content">
-                        <input type="checkbox" id="logCheck">
-
-                    </div>
-                    <p for="logcheck" class="text">Remember me</p>
-                </div>
-
-                <p>Forgot password? <a href="#">Click here</a></p>
-                
-                <div class="btn-field">
-                    <button type="button" onclick="validation()" id="loginBtn">Login</button>
-                    <button type="button" id = "cancelBtn" class="disable">Cancel</button>
-                </div>
-            
-            
-            
-            
-            </form>
-        </div>
-
+            <label for="">Username</label>
+            <div class="form-group"> 
+                <input type="text" name="username" placeholder="Enter username" class="form-control">
+            </div>
+            <label for="">Password</label>
+            <div class="form-group">
+                <input type="password" name="password" placeholder="Enter password" class="form-control">
+            </div>
+            <div class="btn-field">
+                <button type="submit">Login</button>
+            </div>
+            <div class = "forgot-pass">
+                <a href="roll.html">Forgot password?</a>
+            </div>
+       </div>     
         
-    </div>
-
-
-
-    
+    </form>
 </body>
+
 <script>
     $(document).ready(function() {
         $('#login-frm').submit(function(e) {

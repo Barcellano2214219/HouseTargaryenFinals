@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+div#sidebar {
+    width: 250px;
+    height: 95.3%;
+    position: absolute;
+}
+#sidebar .sidebar-item {
+    position: relative;
+    height: 50px;
+    padding: 10px;
+    display: inline-flex;
+    font-size: 15px;
+    align-items: center;
+    border-bottom: 1px solid #00ffb76b;
+    width: 100%;
+    color: black;
+    font-weight: 700
+}
+#sidebar .sidebar-item:hover, #sidebar .sidebar-item.active {
+    text-decoration: unset;
+    background: #00ff594a;
+    color: #353535 !important;
+}
+
+#sidebar .sidebar-item .sidebar-icon {
+	width:11%;
+	padding: auto;
+}
+div#main{
+	margin-top: 10px;
+	margin-left:250px;
+	padding: 20px
+}
+
+.admin{
+    margin-top: 10px;
+    margin-left:250px;
+    padding: 20px;
+    width:82% !important;
+    
+}
+
+
+.pull-right{
+	float: right;
+}
+button.btn-rounded{
+	border-radius: 50% !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* #login-body>.card{
+      top:15vh;
+}
+
+#login-body>.card-body{
+    width: 90%;
+    max-width: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(46,46,46,1);
+    padding: 50px 60px 70px;
+    text-align: center;
+} */
+
+/* #login-body>.card>.card-header-edge {
+    position: relative;
+    top: -1em;
+    width: 100%;
+    min-height: 3em;
+    padding: 1em;
+    text-align: center;
+    font-size: 1.5em;
+    background: rgb(9, 168, 12);
+    background: radial-gradient(circle, rgb(168, 9, 9) 0%, rgba(98,167,247,1) 100%);
+} */
+/* 
+#login-frm>.form-group{
+    width: 90%;
+    max-width: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(46,46,46,1);
+    padding: 50px 60px 70px;
+    text-align: center;
+} */

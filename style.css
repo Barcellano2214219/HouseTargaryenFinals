@@ -4,18 +4,18 @@
     box-sizing: border-box;
 }
 
-body{
-    font-family: Lato;
+@font-face {
+    font-family: LatoBlack;
+    src: url(fonts/Lato-Bold.ttf);
 }
 
-.container{
-    width: 100%;
-    height: 100vh;
-    background-image: none;
-    background-color: rgb(171, 188, 159);
-    background-position: center;
-    background-size: cover;
-    position: relative;
+body{
+    background-image: url(background.jpg);
+    background-size: auto;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
 }
 
 .form-box{
@@ -26,22 +26,34 @@ body{
     left: 50%;
     transform: translate(-50%,-50%);
     background: rgba(46,46,46,1);
-    padding: 50px 60px 70px;
+    padding: 50px 60px 50px;
     text-align: center;
 }
 
-/* Login text */
+.form-box label{
+    width: 280px;
+    color: aliceblue;
+    position: relative;
+    align-items: center;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
 .form-box h1{
     font-size: 30px;
+    font-family: LatoBlack;
     margin-bottom: 50px;
     top: 10%;
     left: 50%;
-    transform: translate(-50%,-180%);
+    transform: translate(-50%,400%);
     color: white;
     position: relative;
 }
 
-.logo {
+.logo{
     width: 90px;
     height: 90px;
     background: url("v2_12.png");
@@ -50,14 +62,22 @@ body{
     background-size: cover;
     opacity: 1;
     position: relative;
-    top: 10%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%,-10%);
-    margin-bottom: 60px;
-    overflow:visible;
+    transform: translate(-50%,-50%);
+    margin-bottom: 40%;
+    
 }
 
-.input-field{
+input{
+    width: 100%;
+    background:transparent;
+    border: 0;
+    outline: 0;
+    padding: 13px 15px;
+}
+
+.form-group{
     width: 280px;
     background-color: aliceblue;
     margin: 15px 0;
@@ -70,76 +90,23 @@ body{
     align-items: center;
     max-height: 65px;
     transition: max-height 0.5s;
-    overflow: hidden;
-}
-
-input{
-    width: 100%;
-    background:transparent;
-    border: 0;
-    outline: 0;
-    padding: 13px 15px;
-}
-
-form .checkbox-text{
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    top: 100%;
-    left: 65%;
-    transform: translate(-137%,-70%);
-    
-}
-
-.checkbox-text .checkbox-content{
-    position: relative;
-    top: 100%;
-    left: 65%;
-    transform: translate(-81%,-90%);
-}
-
-.checkbox-text p{
-    display: flex;
-    position: relative;
-    top: 100%;
-    left: 65%;
-    transform: translate(-170%,-90%);
-    font-size: 13px;
-}
-
-.checkbox-content input{
-    margin: 0 8px -2px 4px;
-    accent-color: green;
-}
-
-form p{
-    color: aliceblue;
-    position: relative;
-    top: 100%;
-    left: 65%;
-    transform: translate(-90%,500%);
-    font-size: 13px;
-}
-
-form p a{ 
-    text-decoration: none;
-    color: aliceblue;
+    overflow: hidden; 
 }
 
 .btn-field{
     width: 280px;
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
+    margin-top: 10px;
+    display:flex;
     position: relative;
-    top: 40%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%,-120%);
-
+    transform: translate(-50%,-40%);
+    align-items: center;
+    max-height: 65px;
 }
 
 .btn-field button{
-    flex-basis: 48%;
+    flex-basis: 100%;
     background: rgb(65, 164, 88);
     color: white;
     height: 40px;
@@ -150,8 +117,3 @@ form p a{
     transition: background 1s;
 }
 
-.btn-field button.disable{
-    border: 2px solid white;
-    background-color: rgba(46,46,46,1);
-    color: white;
-}

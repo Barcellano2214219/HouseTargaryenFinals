@@ -9,90 +9,29 @@
             header('Location:home.php');
         }
         ?>
-        <link rel="stylesheet" href="style.css">
 		<title>Login | Simple Online Quiz System</title>
+        <link rel="stylesheet" href="style.css">
 	</head>
 
-	<!-- <body id='login-body' class="bg-light">
-        <div class = "container">
-        <div class="form-box">
-            <div class="logo"></div>
-            <h1 id="title">Login</h1>
-                <form id="login-frm">
-                    <div class="form-group" id = "nameField">
-                        <input type="username" name="username" placeholder = "Username" class="form-control">
-                    </div>
-                    
-                    <div class="form-group" id = "passwordField">
-                        <input type="password" name="password" placeholder = "password" class="form-control">                        
-                    </div> 
-                    
-            
-                    <div class="form-group text-right">
-                        <button class="btn btn-primary btn-block" name="submit">Login</button>
-                    </div>
-                        
-
-                    <div class="checkbox-text">
-                        <div class="checkbox-content">
-                            <input type="checkbox" id = "logCheck">
-                            <label for="logCheck" class = "text">Remember me</label>
-                        </div>
-
-                        <a href="#" class = "text">Forgot passwod?</a>
-                    </div>
-                </form>
-            </div>
-        </div>
-        </div>
-		
-
-		</body> -->
-
-        <body>
-    <div class = "container">
-        <div class = "form-box">
-            <div class="logo"></div>
-            <h1 id="title">Login</h1>
-            
-            <form action="" method="post">
-                <div class = "input-group">
-                    <div class = "input-field" id="nameField">
-                        <input type="username" id = "username" placeholder="Username">
-                    </div>
-
-                    <div class = "input-field">
-                        <input type="password" id ="password" placeholder="Password">
-                    </div>
-                </div>
-                
-                <div class="checkbox-text">
-                    <div class="checkbox-content">
-                        <input type="checkbox" id="logCheck">
-
-                    </div>
-                    <p for="logcheck" class="text">Remember me</p>
-                </div>
-
-                <p>Forgot password? <a href="#">Click here</a></p>
-                
-                <div class="btn-field">
-                    <button type="button" onclick="validation()" id="loginBtn">Login</button>
-                    <button type="button" id = "cancelBtn" class="disable">Cancel</button>
-                </div>
-            
-            
-            
-            
-            </form>
-        </div>
-
+	<body>
+    <form class = "container" id="login-frm">
         
-    </div>
+       <div class="form-box">
+            <h1>Login</h1>
+            <div class="logo"></div>
 
-
-
-    
+            <div class="form-group"> 
+                <input type="text" name="username" placeholder="Username" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="password" name="password" placeholder="Password" class="form-control">
+            </div>
+            <div class="btn-field">
+                <button type="submit">Login</button>
+            </div>
+       </div>     
+        
+    </form>
 </body>
 
         <script>
