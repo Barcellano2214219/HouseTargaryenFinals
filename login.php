@@ -13,21 +13,24 @@
         <link rel="stylesheet" href="style.css">
 	</head>
 
-	<body>
-    <form class = "container" id="login-frm">
-        
+	<<body>
+    <form class = "container" id="login-frm">     
        <div class="form-box">
             <h1>Login</h1>
             <div class="logo"></div>
-
+            <label for="">Username</label>
             <div class="form-group"> 
-                <input type="text" name="username" placeholder="Username" class="form-control">
+                <input type="text" name="username" placeholder="Enter username" class="form-control">
             </div>
+            <label for="">Password</label>
             <div class="form-group">
-                <input type="password" name="password" placeholder="Password" class="form-control">
+                <input type="password" name="password" placeholder="Enter password" class="form-control">
             </div>
             <div class="btn-field">
                 <button type="submit">Login</button>
+            </div>
+            <div class = "forgot-pass">
+                <a href="roll.html">Forgot password?</a>
             </div>
        </div>     
         
