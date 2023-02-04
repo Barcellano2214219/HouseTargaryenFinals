@@ -1,13 +1,22 @@
-			<nav class = "navbar navbar-header navbar-light bg-primary">
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="nav_bar.css">
+		
+		<nav class = "navbar">
 			<div class = "container-fluid">
 				<div class = "navbar-header">
 					<p class = "navbar-text pull-right text-white"><h3>Simple Online Quiz System</h3></p>
 				</div>
-				<div class = "nav navbar-nav navbar-right">
-					<a href="logout.php" class="text-dark"><?php echo $name ?> <i class="fa fa-power-off"></i></a>
+				<div class = "nav-right">
+					<a href="logout.php" class="text-dark"> <?php echo $name ?> <i class="fa fa-power-off"></i></a>
 				</div>
 			</div>
 		</nav>
+		
 		<div id="sidebar" class="bg-light">
 			<div id="sidebar-field">
 				<a href="home.php" class="sidebar-item text-dark">
@@ -59,3 +68,8 @@
 			})
 			
 		</script>
+</html>
+			
+			
+			
+			

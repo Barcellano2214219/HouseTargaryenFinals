@@ -25,7 +25,7 @@
 							<th>Title</th>
 							<th>Items</th>
 							<th>Point per Items</th>
-							<?php if($_SESSION['login_user_type'] ==1): ?>
+							<?php if($_SESSION['login_user_type'] == 1): ?>
 							<th>Faculty</th>
 							<?php endif; ?>
 							<th>Action</th>
@@ -88,7 +88,6 @@
 									<label>Points per question</label>
 									<input type="nember" name ="qpoints" required="" class="form-control" />
 								</div>
-								<?php if($_SESSION['login_user_type'] == 1): ?>
 								<div class="form-group">
 									<label>Faculty</label>
 									<select name="user_id" required="required" class="form-control" />
@@ -101,9 +100,6 @@
 									<?php } ?>
 									</select>
 								</div>
-								<?php else: ?>
-									<input type="hidden" name="user_id" />
-								<?php endif; ?>
 							</div>
 							<div class="modal-footer">
 								<button  class="btn btn-primary" name="save"><span class="glyphicon glyphicon-save"></span> Save</button>

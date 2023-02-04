@@ -12,7 +12,6 @@
 	
 	<div class="container-fluid admin">
 		<div class="col-md-12 alert alert-primary">Faculty List</div>
-		<button class="btn btn-primary bt-sm" id="new_faculty"><i class="fa fa-plus"></i>	Add New</button>
 		<br>
 		<br>
 		<div class="card">

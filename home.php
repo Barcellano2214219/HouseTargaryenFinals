@@ -7,7 +7,8 @@
 <html lang="en">
 <head>
     <?php include('header.php') ?>
-    <title>Home | Simple Online Quiz System</title>
+    <title>Home | Simple Quiz</title>
+    <link rel="stylesheet" href="home.css">
 </head>
 <body>
     <?php 

@@ -4,12 +4,16 @@
     box-sizing: border-box;
 }
 
+.navbar{
+    background-color: rgb(65, 164, 89);
+}
 
 div#sidebar {
     width: 250px;
     height: 95.3%;
     position: absolute;
 }
+
 #sidebar .sidebar-item {
     position: relative;
     height: 50px;
@@ -32,6 +36,7 @@ div#sidebar {
 	width:11%;
 	padding: auto;
 }
+
 div#main{
 	margin-top: 10px;
 	margin-left:250px;
@@ -54,52 +59,3 @@ button.btn-rounded{
 	border-radius: 50% !important;
 }
 
-
-
-
-
-
-
-
-
-
-
-/* #login-body>.card{
-      top:15vh;
-}
-
-#login-body>.card-body{
-    width: 90%;
-    max-width: 350px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background: rgba(46,46,46,1);
-    padding: 50px 60px 70px;
-    text-align: center;
-} */
-
-/* #login-body>.card>.card-header-edge {
-    position: relative;
-    top: -1em;
-    width: 100%;
-    min-height: 3em;
-    padding: 1em;
-    text-align: center;
-    font-size: 1.5em;
-    background: rgb(9, 168, 12);
-    background: radial-gradient(circle, rgb(168, 9, 9) 0%, rgba(98,167,247,1) 100%);
-} */
-/* 
-#login-frm>.form-group{
-    width: 90%;
-    max-width: 350px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background: rgba(46,46,46,1);
-    padding: 50px 60px 70px;
-    text-align: center;
-} */

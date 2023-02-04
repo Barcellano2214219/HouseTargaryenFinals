@@ -10,14 +10,15 @@
         }
         ?>
 		<title>Login | Simple Online Quiz System</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="login.css">
 	</head>
 
-	<<body>
+<<body>
     <form class = "container" id="login-frm">     
        <div class="form-box">
             <h1>Login</h1>
-            <div class="logo"></div>
+            <div class="logo">
+            </div>
             <label for="">Username</label>
             <div class="form-group"> 
                 <input type="text" name="username" placeholder="Enter username" class="form-control">
@@ -32,9 +33,10 @@
             <div class = "forgot-pass">
                 <a href="roll.html">Forgot password?</a>
             </div>
-       </div>     
-        
+       </div>        
     </form>
+
+
 </body>
 
         <script>
