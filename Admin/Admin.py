@@ -12,7 +12,7 @@ class Admin:
     def __init__(self):
         self.root = tk.Tk()
 
-        self.root.configure(bg="sky blue")
+        self.root.configure(bg="light green")
 
         # Window Size
         self.root.geometry("480x360")
@@ -57,7 +57,7 @@ class Admin:
 
         # Frame Design
         MainFrame = Frame(self.facultyWindow, bd=10, width=770,
-                          height=700, relief=RIDGE, bg='sky blue')
+                          height=700, relief=RIDGE, bg='light green')
         MainFrame.grid()
 
         TitleFrame = Frame(MainFrame, bd=7, width=770,
@@ -67,14 +67,14 @@ class Admin:
         TopFrame3.grid(row=1, column=0)
 
         LeftFrame = Frame(TopFrame3, bd=5, width=770, height=400,
-                          padx=2, bg="sky blue", relief=RIDGE)
+                          padx=2, bg="light green", relief=RIDGE)
         LeftFrame.pack(side=LEFT)
         LeftFrame1 = Frame(LeftFrame, bd=5, width=600,
                            height=180, padx=12, pady=9, relief=RIDGE)
         LeftFrame1.pack(side=TOP)
 
         RightFrame1 = Frame(TopFrame3, bd=5, width=100,
-                            height=400, padx=2, bg="sky blue", relief=RIDGE)
+                            height=400, padx=2, bg="light green", relief=RIDGE)
         RightFrame1.pack(side=RIGHT)
         RightFrame1a = Frame(RightFrame1, bd=5, width=90,
                              height=300, padx=2, pady=2, relief=RIDGE)
@@ -298,7 +298,7 @@ class Admin:
 
         # Frame Design
         MainFrame = Frame(self.studentWindow, bd=10, width=770,
-                          height=700, relief=RIDGE, bg='sky blue')
+                          height=700, relief=RIDGE, bg='light green')
         MainFrame.grid()
 
         TitleFrame = Frame(MainFrame, bd=7, width=770,
@@ -308,14 +308,14 @@ class Admin:
         TopFrame3.grid(row=1, column=0)
 
         LeftFrame = Frame(TopFrame3, bd=5, width=770, height=400,
-                          padx=2, bg="sky blue", relief=RIDGE)
+                          padx=2, bg="light green", relief=RIDGE)
         LeftFrame.pack(side=LEFT)
         LeftFrame1 = Frame(LeftFrame, bd=5, width=600,
                            height=180, padx=12, pady=9, relief=RIDGE)
         LeftFrame1.pack(side=TOP)
 
         RightFrame1 = Frame(TopFrame3, bd=5, width=100,
-                            height=400, padx=2, bg="sky blue", relief=RIDGE)
+                            height=400, padx=2, bg="light green", relief=RIDGE)
         RightFrame1.pack(side=RIGHT)
         RightFrame1a = Frame(RightFrame1, bd=5, width=90,
                              height=300, padx=2, pady=2, relief=RIDGE)
@@ -358,7 +358,8 @@ class Admin:
         # Table TreeView
         scroll_y = Scrollbar(LeftFrame, orient=VERTICAL)
         self.student_records = ttk.Treeview(LeftFrame, height=17,
-                                            columns=("id", "user_id", "level_section", "date_updated"),
+                                            columns=(
+                                                "id", "user_id", "level_section", "date_updated"),
                                             yscrollcommand=scroll_y.set)
         scroll_y.pack(side=RIGHT, fill=Y)
 
@@ -540,22 +541,28 @@ class Admin:
         self.accountWindow.resizable(width=False, height=False)
 
         # Frame Design
-        MainFrame = Frame(self.accountWindow, bd=10, width=770, height=700, relief=RIDGE, bg='sky blue')
+        MainFrame = Frame(self.accountWindow, bd=10, width=770,
+                          height=700, relief=RIDGE, bg='light green')
         MainFrame.grid()
 
-        TitleFrame = Frame(MainFrame, bd=7, width=770, height=100, relief=RIDGE)
+        TitleFrame = Frame(MainFrame, bd=7, width=770,
+                           height=100, relief=RIDGE)
         TitleFrame.grid(row=0, column=0)
         TopFrame3 = Frame(MainFrame, bd=5, width=770, height=500, relief=RIDGE)
         TopFrame3.grid(row=1, column=0)
 
-        LeftFrame = Frame(TopFrame3, bd=5, width=770, height=400, padx=2, bg="sky blue", relief=RIDGE)
+        LeftFrame = Frame(TopFrame3, bd=5, width=770, height=400,
+                          padx=2, bg="light green", relief=RIDGE)
         LeftFrame.pack(side=LEFT)
-        LeftFrame1 = Frame(LeftFrame, bd=5, width=600, height=180, padx=12, pady=9, relief=RIDGE)
+        LeftFrame1 = Frame(LeftFrame, bd=5, width=600,
+                           height=180, padx=12, pady=9, relief=RIDGE)
         LeftFrame1.pack(side=TOP)
 
-        RightFrame1 = Frame(TopFrame3, bd=5, width=100, height=400, padx=2, bg="sky blue", relief=RIDGE)
+        RightFrame1 = Frame(TopFrame3, bd=5, width=100,
+                            height=400, padx=2, bg="light green", relief=RIDGE)
         RightFrame1.pack(side=RIGHT)
-        RightFrame1a = Frame(RightFrame1, bd=5, width=90, height=300, padx=2, pady=2, relief=RIDGE)
+        RightFrame1a = Frame(RightFrame1, bd=5, width=90,
+                             height=300, padx=2, pady=2, relief=RIDGE)
         RightFrame1a.pack(side=TOP)
 
         # Variables
@@ -567,25 +574,29 @@ class Admin:
         self.AccountStatus = StringVar()
 
         # Label Title
-        self.labelTitle = Label(TitleFrame, font=('arial', 40, 'bold'), text="Account Manager", bd=7, fg="blue")
+        self.labelTitle = Label(TitleFrame, font=(
+            'arial', 40, 'bold'), text="Account Manager", bd=7, fg="blue")
         self.labelTitle.grid(row=0, column=0, padx=132)
 
         # Entry for ID
-        self.aid = Label(LeftFrame1, font=('arial', 12, 'bold'), text="ID", bd=7)
+        self.aid = Label(LeftFrame1, font=(
+            'arial', 12, 'bold'), text="ID", bd=7)
         self.aid.grid(row=0, column=0, sticky=W, padx=5)
         self.entaID = Entry(LeftFrame1, font=('arial', 12, 'bold'), bd=5, width=44, justify='left',
                             textvariable=self.AccountID)
         self.entaID.grid(row=0, column=1, sticky=W, padx=5)
 
         # Entry for Name
-        self.aName = Label(LeftFrame1, font=('arial', 12, 'bold'), text="Name", bd=7)
+        self.aName = Label(LeftFrame1, font=(
+            'arial', 12, 'bold'), text="Name", bd=7)
         self.aName.grid(row=1, column=0, sticky=W, padx=5)
         self.entaName = Entry(LeftFrame1, font=('arial', 12, 'bold'), bd=5, width=44, justify='left',
                               textvariable=self.AccountName)
         self.entaName.grid(row=1, column=1, sticky=W, padx=5)
 
         # Entry for UserType
-        self.aType = Label(LeftFrame1, font=('arial', 12, 'bold'), text="User Type", bd=7)
+        self.aType = Label(LeftFrame1, font=(
+            'arial', 12, 'bold'), text="User Type", bd=7)
         self.aType.grid(row=2, column=0, sticky=W, padx=5)
         self.entaType = ttk.Combobox(LeftFrame1, font=('arial', 12, 'bold'), width=44, state='readonly',
                                      textvariable=self.AccountType)
@@ -594,21 +605,24 @@ class Admin:
         self.entaType.grid(row=2, column=1)
 
         # Entry for Username
-        self.aUserName = Label(LeftFrame1, font=('arial', 12, 'bold'), text="Username", bd=7)
+        self.aUserName = Label(LeftFrame1, font=(
+            'arial', 12, 'bold'), text="Username", bd=7)
         self.aUserName.grid(row=3, column=0, sticky=W, padx=5)
         self.entaUserName = Entry(LeftFrame1, font=('arial', 12, 'bold'), bd=5, width=44, justify='left',
                                   textvariable=self.AccountUserName)
         self.entaUserName.grid(row=3, column=1, sticky=W, padx=5)
 
         # Entry for Password
-        self.aPassword = Label(LeftFrame1, font=('arial', 12, 'bold'), text="Password", bd=7)
+        self.aPassword = Label(LeftFrame1, font=(
+            'arial', 12, 'bold'), text="Password", bd=7)
         self.aPassword.grid(row=4, column=0, sticky=W, padx=5)
         self.entaPassword = Entry(LeftFrame1, font=('arial', 12, 'bold'), bd=5, width=44, justify='left',
                                   textvariable=self.AccountPassword)
         self.entaPassword.grid(row=4, column=1, sticky=W, padx=5)
 
         # Entry for Status
-        self.aStatus = Label(LeftFrame1, font=('arial', 12, 'bold'), text="User Status", bd=7)
+        self.aStatus = Label(LeftFrame1, font=(
+            'arial', 12, 'bold'), text="User Status", bd=7)
         self.aStatus.grid(row=5, column=0, sticky=W, padx=5)
         self.entaStatus = ttk.Combobox(LeftFrame1, font=('arial', 12, 'bold'), width=44, state='readonly',
                                        textvariable=self.AccountStatus)
@@ -626,7 +640,8 @@ class Admin:
 
         self.account_records.heading("id", text="id")
         self.account_records.heading("name", text="Name")
-        self.account_records.heading("user_type", text="User Type 2=Faculty 3=Student")
+        self.account_records.heading(
+            "user_type", text="User Type 2=Faculty 3=Student")
         self.account_records.heading("username", text="Username")
         self.account_records.heading("password", text="Password")
         self.account_records.heading("status", text="status")
