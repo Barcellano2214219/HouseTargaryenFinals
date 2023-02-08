@@ -1,5 +1,5 @@
 <?php 
-
+// This code is a PHP script that performs insert or update operations on a database of questions and options.
 include 'db_connect.php';
 extract($_POST);
 
@@ -51,4 +51,3 @@ if(empty($id)){
 
 			}
 	}
-?>

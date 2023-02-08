@@ -1,5 +1,5 @@
 <?php 
-
+// This code is a PHP script that inserts answers from a quiz taken by a student into a database.
 include 'db_connect.php';
 
 extract($_POST);
@@ -28,4 +28,3 @@ $total = count($question_id) * $qpoints;
 	$insert2 = $conn->query("INSERT INTO history set ".$data);
 	if($insert2)
 	echo json_encode(array('status'=>1,'score'=>$score.'/'.$total));
-?>
