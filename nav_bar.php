@@ -6,7 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="nav_bar.css">
-
+	<!-- It generates a navigation bar at the top with the title "Online Quiz System" and a logout button with the user's name. 
+	It also generates a side menu with different options for different user types: "Home", "Student List", "Quiz List", and "Quiz Records".  -->
 	<nav class="navbar">
 		<div class="container-fluid">
 			<div class="navbar-header">
