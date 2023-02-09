@@ -11,6 +11,9 @@ include 'auth.php';
     <title>Home | Online Quiz</title>
     <link rel="stylesheet" href="home.css">
 </head>
+<!-- It displays a table of quizzes, with the title of each quiz and the number of items in each quiz. -->
+<!-- If the user is a student the table shows the status of the quiz as "Taken" or "Pending". -->
+<!-- If the user is a teacher the table shows the number of times the quiz has been taken. -->
 
 <body>
     <?php

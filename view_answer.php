@@ -14,6 +14,8 @@ $hist = $conn->query("SELECT * FROM history where quiz_id =" . $_GET['id'] . " a
 </head>
 
 <body>
+	<!-- The code is a PHP script for a web application that shows the answer sheet for a quiz. -->
+	<!-- The script generates a list of questions and their options from the database and highlights the correct answer and the student's answer. -->
 	<style>
 		/*li.answer{
 			cursor: pointer;

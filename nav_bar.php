@@ -27,13 +27,6 @@
 			</a>
 		</div>
 		<?php if ($_SESSION['login_user_type'] != 3) : ?>
-			<?php if ($_SESSION['login_user_type'] == 1) : ?>
-				<div id="sidebar-field">
-					<a href="faculty.php" class="sidebar-item text-dark">
-						<div class="sidebar-icon"><i class="fa fa-users"> </i></div> Faculty List
-					</a>
-				</div>
-			<?php endif; ?>
 			<div id="sidebar-field">
 				<a href="student.php" class="sidebar-item text-dark">
 					<div class="sidebar-icon"><i class="fa fa-users"> </i></div> Student List
